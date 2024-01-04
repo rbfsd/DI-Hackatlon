@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bring Solidarity Home</title>
+</head>
+
+<body>
+
+    <!-- Popup -->
+    <div class='popup-onload' id="popup">
+        <div class='cnt223'>
+
+            <div class="popup-content">
+                <h2>Welcome to our website!</h2>
+                <p>"In memory of all my brothers in arms who fell in combat since October 7th in the deadly attack by
+                    Hamas".</p>
+                <br>
+                <p>"Thank you for helping us by volunteering."</p>
+                <br>
+                <p>ביחד ננצח</p>
+                <a href='javascript:void(0);' class='close' onclick="closePopup()">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- audio display -->
+    <audio autoplay loop preload="auto">
+        <source src="images/אייל גולן  עם ישראל חי (Prod.By Offir Cohen) (1).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- page -->
+    <div class="page-container">
+
+        <h1>Bring Solidarity Home</h1>
+        <p>A platform dedicated to collective action to make a positive difference in times of need. We believe in the
+            power of solidarity to transform challenging situations into opportunities to help others.</p>
+
+        <div class="item">
+            <div class="box">
+                <h2>Our Mission</h2>
+                <p>Our mission is to create a space where the community can come together to offer support to
+                    individuals,
+                    families, and businesses during challenging moments. At Bring Solidarity Home, we connect passionate
+                    volunteers with meaningful opportunities, thereby creating a dynamic network of solidarity.</p>
+            </div>
+
+            <div class="box">
+                <h2>What We Believe</h2>
+                <p>We believe that every act of kindness, whether big or small, contributes to building a more resilient
+                    society. By uniting our forces, we aspire to inspire change, share experiences, and foster unity
+                    within
+                    our
+                    community.</p>
+            </div>
+
+            <div class="box">
+                <h2>Join Us</h2>
+                <p>Bring Solidarity Home invites you to be part of this initiative. Every contribution, no matter how
+                    modest,
+                    has a significant impact. Together, let's make solidarity in action a guiding principle for stronger
+                    and
+                    brighter communities.</p>
+                <p>Join us on this adventure. Together, we can make a difference.</p>
+            </div>
+        </div>
+        <div class="item">
+            <form id="myForm" onsubmit="return afficherDonnees();">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" placeholder=".....@....."><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" required>
+                <label for="myfile">Put your CV:</label>
+                <input type="file" id="myfile" name="myfile"><br>
+                <label for="phone">Enter a phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX" required><br>
+                <label for="country">Choose a country:</label>
+                <input list="country" name="country" required>
+                <datalist id="country">
+                    <option value="France">
+                    <option value="England">
+                    <option value="USA">
+                    <option value="Israel">
+                </datalist><br>
+
+                <label for="">What areas are you interested in for connecting with volunteer services?</label>
+                <input list="possibility" name="possibility" required>
+                <datalist id="possibility">
+                    <option value="Medical Care">
+                    <option value="Psychological Support">
+                    <option value="Logistics">
+                    <option value="Education">
+                </datalist>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- <footer>
+    <p><strong>In memory of all my brothers in arms who fell in combat since October 7th in the deadly attack by
+            Hamas</strong></p>
+</footer> -->

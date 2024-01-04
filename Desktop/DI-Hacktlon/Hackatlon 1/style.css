@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    background-image: url(images/taylor-brandon-Y8r0RTNrIWM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 100;
+    display: none;
+}
+
+.popup-content {
+    padding: 14px 10px;
+    line-height: 1.5;
+}
+
+.cnt223 a {
+    text-decoration: none;
+}
+
+.popup-onload {
+    margin: 0 auto;
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+}
+
+.cnt223 {
+    min-width: 600px;
+    width: 600px;
+    min-height: 150px;
+    margin: 100px auto;
+    background: #f3f3f3;
+    position: relative;
+    z-index: 103;
+    padding: 15px 35px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #000;
+}
+
+/* popup page */
+/* .cnt223 p {
+    clear: both;
+    color: #555555;
+    /
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.cnt223 p a {
+    color: #d91900;
+    font-weight: bold;
+}
+
+.cnt223 .x {
+    float: right;
+    height: 35px;
+    left: 22px;
+    position: relative;
+    top: -25px;
+    width: 34px;
+}
+
+.cnt223 .x:hover {
+    cursor: pointer;
+} */
+
+/* BSH */
+
+.page-container {
+    width: 60vw;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 30px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Equal-width columns */
+    gap: 20px;
+}
+
+.page-container h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.masked-text {
+    -webkit-mask-image: url('images/taylor-brandon-Y8r0RTNrIWM-unsplash.jpg');
+    mask-image: url('images/taylor-brandon-Y8r0RTNrIWM-unsplash.jpg');
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+div p,
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Additional styles for the form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    /* Center the form horizontally */
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="file"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.valid-phone {
+    border-color: green;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Pour les écrans de taille moyenne comme les tablettes */
+@media only screen and (max-width: 768px) {
+    .page-container {
+        width: 80vw;
+        grid-template-columns: 1fr;
+        /* Une seule colonne pour les écrans plus petits */
+        padding: 20px;
+    }
+}
+
+/* Pour les écrans de petite taille comme les téléphones */
+@media only screen and (max-width: 480px) {
+    .page-container {
+        width: 90vw;
+        padding: 10px;
+    }
+
+    form {
+        max-width: 100%;
+        /* Occuper la largeur complète */
+    }
+}
